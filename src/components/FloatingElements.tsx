@@ -1,61 +1,73 @@
 const FloatingElements = () => {
   return (
     <>
-      {/* Star - Blue */}
-      <svg
-        className="absolute top-4 left-4 w-8 h-8"
-        style={{ animation: "float 3s ease-in-out infinite", color: "var(--color-blue)" }}
-        viewBox="0 0 24 24" fill="currentColor"
-      >
-        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
-      </svg>
-
-      {/* Blob - Purple */}
+      {/* Neon dot - green */}
       <div
-        className="absolute top-8 right-6 w-6 h-6 rounded-full"
+        className="absolute top-4 left-4 w-2 h-2 rounded-full"
         style={{
-          backgroundColor: "var(--color-purple)",
+          backgroundColor: "#00ff41",
+          boxShadow: "0 0 10px #00ff41, 0 0 20px rgba(0, 255, 65, 0.3)",
+          animation: "float 3s ease-in-out infinite",
+        }}
+      />
+
+      {/* Neon dot - teal */}
+      <div
+        className="absolute top-8 right-6 w-3 h-3 rounded-full"
+        style={{
+          backgroundColor: "#00ffcc",
+          boxShadow: "0 0 10px #00ffcc, 0 0 20px rgba(0, 255, 204, 0.3)",
           animation: "float-delay 3s ease-in-out infinite",
           opacity: 0.7,
         }}
       />
 
-      {/* Star - Orange */}
-      <svg
-        className="absolute bottom-20 left-3 w-6 h-6"
-        style={{ animation: "float-slow 3s ease-in-out infinite", color: "var(--color-orange)" }}
-        viewBox="0 0 24 24" fill="currentColor"
-      >
-        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
-      </svg>
-
-      {/* Arrow - Blue */}
-      <svg
-        className="absolute bottom-32 right-4 w-7 h-7"
-        style={{ animation: "float 3s ease-in-out infinite 0.5s", color: "var(--color-blue)" }}
-        viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
-      >
-        <path d="M7 17L17 7M17 7H7M17 7V17" />
-      </svg>
-
-      {/* Small blob - Orange */}
+      {/* Small bracket decoration */}
       <div
-        className="absolute top-1/2 left-1 w-4 h-4 rounded-full"
+        className="absolute bottom-20 left-3 text-xs"
         style={{
-          backgroundColor: "var(--color-orange)",
+          color: "rgba(0, 255, 65, 0.3)",
+          fontFamily: "'Courier New', monospace",
+          animation: "float-slow 3s ease-in-out infinite",
+        }}
+      >
+        {"{ }"}
+      </div>
+
+      {/* Code bracket */}
+      <div
+        className="absolute bottom-32 right-4 text-xs"
+        style={{
+          color: "rgba(0, 255, 204, 0.3)",
+          fontFamily: "'Courier New', monospace",
+          animation: "float 3s ease-in-out infinite 0.5s",
+        }}
+      >
+        {"< />"}
+      </div>
+
+      {/* Tiny dot */}
+      <div
+        className="absolute top-1/2 left-1 w-1.5 h-1.5 rounded-full"
+        style={{
+          backgroundColor: "#00ff41",
+          opacity: 0.4,
+          boxShadow: "0 0 6px rgba(0, 255, 65, 0.4)",
           animation: "float-delay 3s ease-in-out infinite 1s",
-          opacity: 0.5,
         }}
       />
 
-      {/* Spinning star - Purple */}
-      <svg
-        className="absolute top-1/3 right-2 w-5 h-5"
-        style={{ animation: "spin-slow 6s linear infinite", color: "var(--color-purple)" }}
-        viewBox="0 0 24 24" fill="currentColor"
+      {/* Spinning character */}
+      <div
+        className="absolute top-1/3 right-2 text-xs"
+        style={{
+          color: "rgba(0, 255, 65, 0.2)",
+          fontFamily: "'Courier New', monospace",
+          animation: "spin-slow 6s linear infinite",
+        }}
       >
-        <path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z" />
-      </svg>
+        *
+      </div>
     </>
   );
 };
