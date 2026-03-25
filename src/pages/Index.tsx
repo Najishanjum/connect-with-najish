@@ -1,4 +1,5 @@
 import ProfileCard from "@/components/ProfileCard";
+import VisitorCounter from "@/components/VisitorCounter";
 
 const Index = () => {
   return (
@@ -7,6 +8,7 @@ const Index = () => {
       style={{ backgroundColor: "var(--color-pastel-yellow)" }}
     >
       <ProfileCard />
+      <VisitorCounter />
     </div>
   );
 };
