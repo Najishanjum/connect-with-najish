@@ -1,8 +1,8 @@
 import profileImg from "@/assets/profile.jpg";
-import { Mail, Github, Globe, MessageCircle } from "lucide-react";
 import FloatingElements from "./FloatingElements";
 import SocialIcons from "./SocialIcons";
 import ActionButton from "./ActionButton";
+import ISTClock from "./ISTClock";
 
 const ProfileCard = () => {
   return (
@@ -108,8 +108,11 @@ const ProfileCard = () => {
         />
       </div>
 
+      {/* Clock */}
+      <ISTClock />
+
       {/* Footer */}
-      <div className="mt-6 text-center">
+      <div className="mt-4 text-center">
         <a
           href="https://najish-anjum-portfolio.vercel.app/"
           target="_blank"
