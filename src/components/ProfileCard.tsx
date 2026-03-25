@@ -48,6 +48,14 @@ const ProfileCard = () => {
         </div>
       </div>
 
+      {/* Tagline */}
+      <p
+        className="font-poppins text-center text-xs font-semibold tracking-widest uppercase mb-2"
+        style={{ color: "var(--color-orange)" }}
+      >
+        Build Ajinava Edge · I Lead Team ILM Tech
+      </p>
+
       {/* Name */}
       <h1 className="font-bungee text-center text-2xl tracking-wide mb-1">
         <span style={{ color: "var(--color-blue)" }}>MD NAJISH </span>
@@ -83,11 +91,34 @@ const ProfileCard = () => {
           label="GitHub Projects"
         />
         <ActionButton
+          href="https://teamilmtech.site"
+          icon="🤝"
+          label="Work With Me"
+        />
+        <ActionButton
+          href="https://www.linkedin.com/in/md-najish-anjum-044078328"
+          icon="💼"
+          label="LinkedIn"
+        />
+        <ActionButton
           href="mailto:najishanjum058@gmail.com"
           icon="✉️"
           label="Contact Me"
           isEmail
         />
+      </div>
+
+      {/* Footer */}
+      <div className="mt-6 text-center">
+        <a
+          href="https://najish-anjum-portfolio.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-poppins text-xs font-medium"
+          style={{ color: "var(--color-subtitle)" }}
+        >
+          www.najish-anjum-portfolio.vercel.app
+        </a>
       </div>
     </div>
   );
