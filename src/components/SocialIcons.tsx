@@ -44,26 +44,18 @@ const socials = [
 ];
 
 const SocialIcons = () => {
-  const [hoveredIdx, setHoveredIdx] = useState<number | null>(null);
-
   return (
-    <div className="flex justify-center gap-5">
-      {socials.map((s, i) => (
+    <div className="flex flex-wrap gap-3">
+      {socials.map((s) => (
         <a
           key={s.label}
           href={s.href}
           target={s.href.startsWith("mailto") ? undefined : "_blank"}
           rel="noopener noreferrer"
           aria-label={s.label}
-          className="transition-all duration-300"
-          style={{
-            color: hoveredIdx === i ? s.hoverColor : "#000",
-            transform: hoveredIdx === i ? "scale(1.2)" : "scale(1)",
-          }}
-          onMouseEnter={() => setHoveredIdx(i)}
-          onMouseLeave={() => setHoveredIdx(null)}
+          className="flex h-9 w-9 items-center justify-center border-2 border-foreground bg-card text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
         >
-          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
             {s.icon}
           </svg>
         </a>
