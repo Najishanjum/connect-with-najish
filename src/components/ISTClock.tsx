@@ -6,16 +6,17 @@ const formatIST = () => {
 
   const hours = ist.getHours();
   const minutes = ist.getMinutes();
-  const ampm = hours >= 12 ? "pm" : "am";
+  const seconds = ist.getSeconds();
+  const ampm = hours >= 12 ? "PM" : "AM";
   const h12 = hours % 12 || 12;
-  const mm = minutes.toString().padStart(2, "0");
+  const pad = (n: number) => n.toString().padStart(2, "0");
 
   const day = ist.getDate();
   const month = ist.toLocaleString("en-US", { month: "long", timeZone: "Asia/Kolkata" });
   const year = ist.getFullYear();
 
   return {
-    time: `${h12}:${mm} ${ampm}`,
+    time: `${h12}:${pad(minutes)}:${pad(seconds)} ${ampm}`,
     date: `${day} ${month}, ${year}`,
   };
 };
@@ -29,15 +30,9 @@ const ISTClock = () => {
   }, []);
 
   return (
-    <div
-      className="text-center font-poppins mt-4 text-xs font-medium"
-      style={{ color: "var(--color-subtitle)" }}
-    >
-      <p>
-        {clock.time}·{clock.date}
-      </p>
-      <p className="text-[10px] mt-0.5 tracking-wide">India · UTC+5:30</p>
-    </div>
+    <span className="font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground sm:text-xs">
+      T: {clock.time} IST · {clock.date} · UTC+5:30
+    </span>
   );
 };
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&family=Archivo:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,34 +6,31 @@
 
 @layer base {
   :root {
-    --background: 50 90% 70%;
-    --foreground: 0 0% 0%;
-    --card: 50 100% 82%;
-    --card-foreground: 0 0% 0%;
+    --background: 40 6% 96%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
-    --primary: 199 91% 64%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 344 96% 50%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 270 95% 75%;
+    --secondary: 0 0% 7%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 50 100% 90%;
-    --muted-foreground: 0 0% 33%;
-    --accent: 16 100% 70%;
+    --muted: 40 6% 92%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 344 96% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 0 0% 0%;
-    --input: 0 0% 0%;
-    --ring: 199 91% 64%;
-    --radius: 0.75rem;
+    --border: 0 0% 7%;
+    --input: 0 0% 7%;
+    --ring: 344 96% 50%;
+    --radius: 0rem;
 
-    --color-pastel-yellow: #F7E96D;
-    --color-card-bg: #FFF9DB;
-    --color-btn-bg: #FFF3A3;
-    --color-blue: #4FC3F7;
-    --color-purple: #C084FC;
-    --color-orange: #FF8A65;
-    --color-subtitle: #555;
+    --color-ink: #111111;
+    --color-crimson: #F50A4D;
+    --color-paper: #F4F3F1;
+    --color-subtitle: #6b6b6b;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -47,24 +44,24 @@
 
   .dark {
     --background: 0 0% 7%;
-    --foreground: 50 90% 70%;
-    --card: 0 0% 12%;
-    --card-foreground: 50 100% 82%;
-    --popover: 0 0% 12%;
-    --popover-foreground: 50 100% 82%;
-    --primary: 199 91% 64%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 270 95% 75%;
-    --secondary-foreground: 0 0% 0%;
+    --foreground: 40 6% 96%;
+    --card: 0 0% 11%;
+    --card-foreground: 40 6% 96%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 40 6% 96%;
+    --primary: 344 96% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 7%;
     --muted: 0 0% 15%;
-    --muted-foreground: 50 90% 80%;
-    --accent: 16 100% 70%;
-    --accent-foreground: 0 0% 0%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 344 96% 55%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 0 0% 30%;
-    --input: 0 0% 30%;
-    --ring: 199 91% 64%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 344 96% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -82,38 +79,33 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
   }
 }
 
 @layer utilities {
+  .font-display {
+    font-family: 'Archivo Black', 'Archivo', sans-serif;
+  }
+  .font-mono-ui {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  .font-sans-ui {
+    font-family: 'Archivo', sans-serif;
+  }
+  /* legacy aliases */
   .font-bungee {
-    font-family: 'Bungee', cursive;
+    font-family: 'Archivo Black', sans-serif;
   }
   .font-poppins {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
   }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes float-delay {
-  0%, 100% { transform: translateY(0px) rotate(15deg); }
-  50% { transform: translateY(-12px) rotate(15deg); }
-}
-
-@keyframes float-slow {
-  0%, 100% { transform: translateY(0px) rotate(-10deg); }
-  50% { transform: translateY(-8px) rotate(-10deg); }
 }
 
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -121,7 +113,7 @@
   }
 }
 
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0.15; }
 }
