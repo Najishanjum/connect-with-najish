@@ -39,7 +39,7 @@ const socials = [
 
 const SocialIcons = () => {
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-2 sm:gap-3">
       {socials.map((s) => (
         <a
           key={s.label}

@@ -137,16 +137,16 @@ const ProfileCard = () => {
       <div className="h-[3px] w-full bg-foreground" />
 
       {/* Footer */}
-      <div className="flex flex-wrap items-center justify-between gap-2 pt-4">
+      <div className="flex flex-wrap items-center justify-between gap-1 pt-4 sm:gap-2">
         <a
           href="https://najish-anjum-portfolio.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-mono-ui text-[10px] uppercase tracking-widest hover:text-primary sm:text-xs"
+          className="break-all font-mono-ui text-[9px] uppercase tracking-widest hover:text-primary sm:text-xs"
         >
           www.najish-anjum-portfolio.vercel.app
         </a>
-        <span className="font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground sm:text-xs">
+        <span className="font-mono-ui text-[9px] uppercase tracking-widest text-muted-foreground sm:text-xs">
           END // FILE
         </span>
       </div>

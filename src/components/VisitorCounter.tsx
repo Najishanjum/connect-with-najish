@@ -21,7 +21,7 @@ const VisitorCounter = () => {
   if (count === null) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2 border-2 border-foreground bg-card px-3 py-1.5 font-mono-ui text-xs uppercase tracking-widest">
+    <div className="fixed bottom-3 right-3 z-50 flex items-center gap-2 border-2 border-foreground bg-card px-2 py-1 font-mono-ui text-[10px] uppercase tracking-widest sm:bottom-4 sm:right-4 sm:px-3 sm:py-1.5 sm:text-xs">
       <span className="text-muted-foreground">Visits</span>
       <span className="font-bold text-primary">
         {count.toLocaleString(undefined, { minimumIntegerDigits: 4, useGrouping: false })}
