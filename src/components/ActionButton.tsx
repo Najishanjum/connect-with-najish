@@ -1,38 +1,33 @@
-import { useState } from "react";
-
 interface ActionButtonProps {
   href: string;
-  icon: string;
+  index: string;
   label: string;
+  meta?: string;
   isEmail?: boolean;
 }
 
-const ActionButton = ({ href, icon, label, isEmail }: ActionButtonProps) => {
-  const [hovered, setHovered] = useState(false);
-
+const ActionButton = ({ href, index, label, meta, isEmail }: ActionButtonProps) => {
   return (
     <a
       href={href}
       target={isEmail ? undefined : "_blank"}
       rel="noopener noreferrer"
-      className="font-poppins font-bold text-sm text-center block"
-      style={{
-        backgroundColor: "var(--color-btn-bg)",
-        border: "2px solid black",
-        borderRadius: "12px",
-        padding: "12px 16px",
-        boxShadow: hovered
-          ? "6px 6px 0px black, 0 0 20px rgba(79, 195, 247, 0.6)"
-          : "4px 4px 0px black",
-        transform: hovered ? "scale(1.05)" : "scale(1)",
-        transition: "all 0.3s ease",
-        color: "#000",
-        textDecoration: "none",
-      }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      className="group flex items-center gap-4 border-b border-dashed border-foreground/40 py-3 transition-colors hover:border-primary"
     >
-      {icon} {label}
+      <span className="font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground">
+        {index}
+      </span>
+      <span className="font-display text-lg uppercase tracking-tight transition-colors group-hover:text-primary">
+        {label}
+      </span>
+      {meta && (
+        <span className="ml-auto hidden font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground sm:inline">
+          {meta}
+        </span>
+      )}
+      <span className="ml-auto font-mono-ui text-sm transition-transform group-hover:translate-x-1 sm:ml-3">
+        →
+      </span>
     </a>
   );
 };
