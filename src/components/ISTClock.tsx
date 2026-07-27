@@ -30,8 +30,12 @@ const ISTClock = () => {
   }, []);
 
   return (
-    <span className="font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground sm:text-xs">
-      T: {clock.time} IST · {clock.date} · UTC+5:30
+    <span className="font-mono-ui text-[9px] uppercase leading-relaxed tracking-widest text-muted-foreground sm:text-xs">
+      T: {clock.time} IST{" "}
+      <span className="hidden sm:inline">· </span>
+      <span className="block sm:inline">
+        {clock.date} · UTC+5:30
+      </span>
     </span>
   );
 };
