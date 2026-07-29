@@ -12,11 +12,13 @@ const ActionButton = ({ href, index, label, meta, isEmail }: ActionButtonProps) 
       href={href}
       target={isEmail ? undefined : "_blank"}
       rel="noopener noreferrer"
-      className="group flex items-center gap-3 border-b border-dashed border-foreground/40 py-3 transition-colors hover:border-primary sm:gap-4"
+      aria-label={`${label}${meta ? ` — ${meta}` : ""}${isEmail ? "" : " (opens in a new tab)"}`}
+      className="group flex min-h-11 items-center gap-3 border-b border-dashed border-foreground/40 py-3 outline-none transition-colors hover:border-primary focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:gap-4"
     >
-      <span className="shrink-0 font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground">
+      <span aria-hidden="true" className="shrink-0 font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground">
         {index}
       </span>
+
       <span className="min-w-0 flex-1 font-display text-[15px] uppercase leading-tight tracking-tight transition-colors group-hover:text-primary sm:text-lg">
         {label}
         {meta && (
