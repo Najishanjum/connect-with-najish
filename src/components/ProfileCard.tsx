@@ -142,10 +142,12 @@ const ProfileCard = () => {
           href="https://najish-anjum-portfolio.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="break-all font-mono-ui text-[9px] uppercase tracking-widest hover:text-primary sm:text-xs"
+          aria-label="Portfolio website of Md Najish Anjum (opens in a new tab)"
+          className="break-all font-mono-ui text-[9px] uppercase tracking-widest outline-none hover:text-primary focus-visible:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:text-xs"
         >
           www.najish-anjum-portfolio.vercel.app
         </a>
+
         <span className="font-mono-ui text-[9px] uppercase tracking-widest text-muted-foreground sm:text-xs">
           END // FILE
         </span>
