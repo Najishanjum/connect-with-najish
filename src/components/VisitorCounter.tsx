@@ -21,13 +21,19 @@ const VisitorCounter = () => {
   if (count === null) return null;
 
   return (
-    <div className="fixed bottom-3 right-3 z-50 flex items-center gap-2 border-2 border-foreground bg-card px-2 py-1 font-mono-ui text-[10px] uppercase tracking-widest sm:bottom-4 sm:right-4 sm:px-3 sm:py-1.5 sm:text-xs">
-      <span className="text-muted-foreground">Visits</span>
-      <span className="font-bold text-primary">
+    <div
+      role="status"
+      aria-live="polite"
+      aria-label={`${count.toLocaleString()} total visits to this page`}
+      className="fixed bottom-3 right-3 z-50 flex items-center gap-2 border-2 border-foreground bg-card px-2 py-1 font-mono-ui text-[10px] uppercase tracking-widest sm:bottom-4 sm:right-4 sm:px-3 sm:py-1.5 sm:text-xs"
+    >
+      <span aria-hidden="true" className="text-muted-foreground">Visits</span>
+      <span aria-hidden="true" className="font-bold text-primary">
         {count.toLocaleString(undefined, { minimumIntegerDigits: 4, useGrouping: false })}
       </span>
     </div>
   );
+
 };
 
 export default VisitorCounter;

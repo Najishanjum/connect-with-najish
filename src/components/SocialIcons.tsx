@@ -39,23 +39,34 @@ const socials = [
 
 const SocialIcons = () => {
   return (
-    <div className="flex flex-wrap gap-2 sm:gap-3">
-      {socials.map((s) => (
-        <a
-          key={s.label}
-          href={s.href}
-          target={s.href.startsWith("mailto") ? undefined : "_blank"}
-          rel="noopener noreferrer"
-          aria-label={s.label}
-          className="flex h-9 w-9 items-center justify-center border-2 border-foreground bg-card text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
-        >
-          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-            {s.icon}
-          </svg>
-        </a>
-      ))}
-    </div>
+    <nav aria-label="Social links">
+      <ul className="flex list-none flex-wrap gap-2 sm:gap-3">
+        {socials.map((s) => {
+          const isMail = s.href.startsWith("mailto");
+          return (
+            <li key={s.label}>
+              <a
+                href={s.href}
+                target={isMail ? undefined : "_blank"}
+                rel="noopener noreferrer"
+                aria-label={
+                  isMail
+                    ? "Email Md Najish Anjum"
+                    : `${s.label} profile of Md Najish Anjum (opens in a new tab)`
+                }
+                className="flex h-11 w-11 items-center justify-center border-2 border-foreground bg-card text-foreground outline-none transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:bg-primary focus-visible:text-primary-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                  {s.icon}
+                </svg>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 };
+
 
 export default SocialIcons;
