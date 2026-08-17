@@ -58,7 +58,7 @@ const ProfileCard = () => {
             <img
               src={profileImg}
               alt="Md Najish Anjum, AI/ML developer"
-              className="h-64 w-full object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 sm:h-56"
+              className="h-auto w-full object-contain grayscale transition-all duration-500 hover:grayscale-0 sm:h-56 sm:object-cover sm:object-top"
               width={480}
               height={560}
             />
