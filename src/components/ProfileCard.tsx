@@ -35,7 +35,7 @@ const ProfileCard = () => {
             Core Focus
           </p>
           <p className="mt-2 font-mono-ui text-xs uppercase leading-relaxed tracking-wide sm:text-sm">
-            AI / ML · Full Stack · Agentic Systems
+            AI / ML · Full Stack · Agentic Systems · Web3 · Blockchain · Content Creator
           </p>
         </div>
         <div className="border-t border-dashed border-foreground/40 pt-5 md:border-l-2 md:border-t-0 md:border-solid md:border-foreground md:pl-6 md:pt-0">
@@ -87,7 +87,7 @@ const ProfileCard = () => {
               Access_Log
             </h2>
             <span className="font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground">
-              06 Entries
+              11 Entries
             </span>
           </div>
 
@@ -125,6 +125,36 @@ const ProfileCard = () => {
             />
             <ActionButton
               index="06"
+              href="https://t.me/Najishanjum"
+              label="Telegram"
+              meta="@Najishanjum"
+            />
+            <ActionButton
+              index="07"
+              href="https://discord.com/users/mdnajishanjum"
+              label="Discord"
+              meta="@mdnajishanjum"
+            />
+            <ActionButton
+              index="08"
+              href="https://www.instagram.com/najishofficial1?stkn=MXRxN3U4amt3aXdsMg=="
+              label="Instagram"
+              meta="@najishofficial1"
+            />
+            <ActionButton
+              index="09"
+              href="https://youtube.com/@najishofficial1?si=4JxxXOHu442W5y7L"
+              label="YouTube"
+              meta="@najishofficial1"
+            />
+            <ActionButton
+              index="10"
+              href="https://luma.com/user/Md_Najish_Anjum"
+              label="Luma"
+              meta="Profile"
+            />
+            <ActionButton
+              index="11"
               href="mailto:najishanjum058@gmail.com"
               label="Contact Me"
               meta="Email"
@@ -139,13 +169,13 @@ const ProfileCard = () => {
       {/* Footer */}
       <div className="flex flex-wrap items-center justify-between gap-1 pt-4 sm:gap-2">
         <a
-          href="https://najish-anjum-portfolio.vercel.app/"
+          href="https://najishanjum-portfolio.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Portfolio website of Md Najish Anjum (opens in a new tab)"
           className="break-all font-mono-ui text-[9px] uppercase tracking-widest outline-none hover:text-primary focus-visible:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:text-xs"
         >
-          www.najish-anjum-portfolio.vercel.app
+          najishanjum-portfolio.vercel.app
         </a>
 
         <span className="font-mono-ui text-[9px] uppercase tracking-widest text-muted-foreground sm:text-xs">
