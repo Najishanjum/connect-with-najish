@@ -7,7 +7,7 @@ import ISTClock from "./ISTClock";
 const ProfileCard = () => {
   return (
     <div
-      className="relative mx-auto w-full max-w-5xl px-4 pb-16 pt-6 sm:px-10 sm:py-8"
+      className="relative mx-auto w-full max-w-5xl bg-background/30 px-4 pb-16 pt-6 backdrop-blur-sm sm:px-10 sm:py-8"
       style={{ animation: "fadeUp 0.7s ease forwards" }}
     >
       <FloatingElements />
