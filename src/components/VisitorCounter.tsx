@@ -25,7 +25,7 @@ const VisitorCounter = () => {
       role="status"
       aria-live="polite"
       aria-label={`${count.toLocaleString()} total visits to this page`}
-      className="fixed bottom-3 right-3 z-50 flex items-center gap-2 border-2 border-foreground bg-card px-2 py-1 font-mono-ui text-[10px] uppercase tracking-widest sm:bottom-4 sm:right-4 sm:px-3 sm:py-1.5 sm:text-xs"
+      className="fixed bottom-3 right-3 z-50 flex items-center gap-2 border-2 border-foreground bg-background/40 px-2 py-1 font-mono-ui text-[10px] uppercase tracking-widest backdrop-blur-sm sm:bottom-4 sm:right-4 sm:px-3 sm:py-1.5 sm:text-xs"
     >
       <span aria-hidden="true" className="text-muted-foreground">Visits</span>
       <span aria-hidden="true" className="font-bold text-primary">

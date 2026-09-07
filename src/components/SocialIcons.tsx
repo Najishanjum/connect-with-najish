@@ -54,7 +54,7 @@ const SocialIcons = () => {
                     ? "Email Md Najish Anjum"
                     : `${s.label} profile of Md Najish Anjum (opens in a new tab)`
                 }
-                className="flex h-11 w-11 items-center justify-center border-2 border-foreground bg-card text-foreground outline-none transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:bg-primary focus-visible:text-primary-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="flex h-11 w-11 items-center justify-center border-2 border-foreground bg-transparent text-foreground outline-none transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:bg-primary focus-visible:text-primary-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
                   {s.icon}

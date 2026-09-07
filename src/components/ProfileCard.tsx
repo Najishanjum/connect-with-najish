@@ -7,7 +7,7 @@ import ISTClock from "./ISTClock";
 const ProfileCard = () => {
   return (
     <div
-      className="relative mx-auto w-full max-w-5xl px-4 pb-16 pt-6 sm:px-10 sm:py-8"
+      className="relative mx-auto w-full max-w-5xl bg-background/30 px-4 pb-16 pt-6 backdrop-blur-sm sm:px-10 sm:py-8"
       style={{ animation: "fadeUp 0.7s ease forwards" }}
     >
       <FloatingElements />
@@ -54,7 +54,7 @@ const ProfileCard = () => {
       <div className="grid gap-6 py-6 md:grid-cols-[240px_1fr] md:gap-8 md:py-8">
         {/* Left column */}
         <div className="md:border-r-2 md:border-foreground md:pr-6">
-          <div className="mb-5 border-2 border-foreground bg-card p-2">
+          <div className="mb-5 border-2 border-foreground bg-transparent p-2">
             <img
               src={profileImg}
               alt="Md Najish Anjum, AI/ML developer"
