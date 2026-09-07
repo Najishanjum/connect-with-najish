@@ -87,8 +87,8 @@ var get_ist_time_default = defineTool3({
 
 // src/lib/mcp/index.ts
 var mcp_default = defineMcp({
-  name: "najish-profile-mcp",
-  title: "Md Najish Anjum \xB7 Profile MCP",
+  name: "najish-s-vibe-card",
+  title: "Najish's Vibe Card",
   version: "0.1.0",
   instructions: "Public tools for Md Najish Anjum's profile card. Use `get_profile` for identity and links, `get_visitor_count` for total visits, and `get_ist_time` for current India Standard Time.",
   tools: [get_profile_default, get_visitor_count_default, get_ist_time_default]
