@@ -87,7 +87,7 @@ const ProfileCard = () => {
               Access_Log
             </h2>
             <span className="font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground">
-              11 Entries
+              12 Entries
             </span>
           </div>
 
