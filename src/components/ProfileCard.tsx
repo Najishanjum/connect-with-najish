@@ -87,7 +87,7 @@ const ProfileCard = () => {
               Access_Log
             </h2>
             <span className="font-mono-ui text-[10px] uppercase tracking-widest text-muted-foreground">
-              11 Entries
+              12 Entries
             </span>
           </div>
 
@@ -97,68 +97,85 @@ const ProfileCard = () => {
               index="01"
               href="https://chat.whatsapp.com/IJw256xuepP956JsufMY6g"
               label="Join Community"
+              iconName="whatsapp"
               meta="WhatsApp"
             />
             <ActionButton
               index="02"
-              href="https://najish-anjum-portfolio.vercel.app/"
+              href="https://najishanjum-portfolio.vercel.app/"
               label="View Portfolio"
+              iconName="globe"
               meta="Vercel"
             />
             <ActionButton
               index="03"
               href="https://github.com/Najishanjum"
               label="GitHub Projects"
+              iconName="github"
               meta="Source"
             />
             <ActionButton
               index="04"
               href="https://teamilmtech.site"
               label="Work With Me"
+              iconName="globe"
               meta="Team ILM Tech"
             />
             <ActionButton
               index="05"
               href="https://www.linkedin.com/in/md-najish-anjum-044078328"
               label="LinkedIn"
+              iconName="linkedin"
               meta="Network"
             />
             <ActionButton
               index="06"
-              href="https://t.me/Najishanjum"
-              label="Telegram"
-              meta="@Najishanjum"
+              href="https://x.com/Najish_anjum"
+              label="X"
+              iconName="twitter"
+              meta="@Najish_anjum"
             />
             <ActionButton
               index="07"
-              href="https://discord.com/users/mdnajishanjum"
-              label="Discord"
-              meta="@mdnajishanjum"
+              href="https://t.me/Najishanjum"
+              label="Telegram"
+              iconName="telegram"
+              meta="@Najishanjum"
             />
             <ActionButton
               index="08"
-              href="https://www.instagram.com/najishofficial1?stkn=MXRxN3U4amt3aXdsMg=="
-              label="Instagram"
-              meta="@najishofficial1"
+              href="https://discord.com/users/mdnajishanjum"
+              label="Discord"
+              iconName="discord"
+              meta="@mdnajishanjum"
             />
             <ActionButton
               index="09"
-              href="https://youtube.com/@najishofficial1?si=4JxxXOHu442W5y7L"
-              label="YouTube"
+              href="https://www.instagram.com/najishofficial1?stkn=MXRxN3U4amt3aXdsMg=="
+              label="Instagram"
+              iconName="instagram"
               meta="@najishofficial1"
             />
             <ActionButton
               index="10"
-              href="https://luma.com/user/Md_Najish_Anjum"
-              label="Luma"
-              meta="Profile"
+              href="https://youtube.com/@najishofficial1?si=4JxxXOHu442W5y7L"
+              label="YouTube"
+              iconName="youtube"
+              meta="@najishofficial1"
             />
             <ActionButton
               index="11"
+              href="https://luma.com/user/Md_Najish_Anjum"
+              label="Luma"
+              iconName="luma"
+              meta="Profile"
+            />
+            <ActionButton
+              index="12"
               href="mailto:najishanjum058@gmail.com"
               label="Contact Me"
+              iconName="email"
               meta="Email"
-              isEmail
             />
           </div>
         </div>
